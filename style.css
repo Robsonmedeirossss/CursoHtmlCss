@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/*Resets*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Body*/
+
+Body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F0F0F0;
+  overflow-x: hidden;
+  font-family: 'Inter';
+}
+
+/*Container das margens laterais*/
+
+.container-margin {
+  width: 90%;
+  max-width: 1500px;
+}
+
+/*header*/
+
+#header {
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .navbar .navlist {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+#header .navbar .navlist li a {
+  text-decoration: none;
+  color: #1E1E1E;
+  font-size: 1rem;
+}
+
+/*Container Principal*/
+
+.container-principal {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10rem 0;
+}
+
+.container-principal .container-margin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.container-principal .container-margin .sobre-projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 60%;
+}
+
+.container-principal .container-margin .sobre-projeto h1 {
+  font-size: 3rem;
+  color: #F51BA3;
+  font-weight: bold;
+}
+
+.container-principal .container-margin .sobre-projeto p {
+  font-size: 1.5rem;
+  color: #1E1E1E;
+}
+
+.container-principal .container-margin .sobre-projeto button {
+  max-width: 14rem;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  background-color: #457EFF;
+  color: white;
+  border: none;
+  font-size: .9rem;
+  transition: .3 ease-in;
+  cursor: pointer;
+}
+
+.container-principal .container-margin .sobre-projeto button:hover {
+  filter: brightness(110%);
+}
+
+/*Container Cards*/
+
+.container-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #457EFF;
+  padding: 5rem;
+}
+
+.container-cards .container-margin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.container-cards .container-margin h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.container-cards .container-margin .cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.container-cards .container-margin .cards .card {
+  width: auto;
+  height: max-content;
+  background-color: white;
+  border-radius: .5rem;
+  padding-bottom: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-cards .container-margin .cards .card p {
+  margin-left: .5rem;
+  margin-top: .5rem;
+}
+
+/*Footer*/
+
+#footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #336FF8;
+  color: white;
+  padding: 2.5rem;
+}
+
+#footer .container-margin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
